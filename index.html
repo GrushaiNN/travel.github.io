@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/vendor/normalize.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<title>Путешествия по России</title>
+</head>
+<body class="body">
+	<!-- Нужно исправить: на макете у некоторых секций максимальная ширина больше (1184 у шапки), а у некоторых меньше (lead, photo-grid). Чтобы делать секции разной ширины было удобнее можно не ограничивать их общей оберткой, а задавать ширину и выравнивать каждую по центру отдельно. -->
+	<!-- Не исправлено. Проверьте какая максимальная ширина у разных секций. -->
+	<!-- Теперь от 1000 до 1200 выходят за вьюпорт разные секции. Не стоит им жестко фиксировать ширину. Просто обращайте внимание на максимальную. Можно медиа-запросом поправить. Главное, чтобы содержимое не выходило за вьюпорт. -->
+ <div class="page">
+	<header class="header">
+		<img class="header__logo" src="images/logo.svg" alt="Логотип: карта России">
+		
+		<div class="header__lang"> <a class="link header__link" href="#">Ru</a></div>
+		<div class="header__lang"> <a class="link header__link header__link_selected" href="#">En</a></div>		
+	</header>
+	<main>
+		<section class="lead">
+			<!-- Можно лучше: для текста стоит задавать не только нужный шрифт, но и запасной того же семейства и само семейство. Чтобы в случае, если шрифт не загрузится, сайт не слишком отличался. -->
+			<!-- Нужно исправить: заголовок выходит за пределы вьюпорта на ширине меньше 820 -->
+			<h1 class="lead__title">Путешествия по России</h1>
+			<h2 class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</h2>
+			<img class="lead__image" src="images/polka.jpg" alt="Изображение: верхняя полка">
+			<p class="lead__caption">ваша полка — верхняя</p>
+		</section>
+		<section class="intro">
+			<h2 class="intro__title">Чего мы там не видели?</h2>
+			<div class="intro__content-row">
+				<p class="intro__text-main">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
+			</div>
+				<div class="intro__text-info">
+					<!-- Нужно исправить: здесь у текста и чисел разное начертание (вес) в макете. -->
+					<!-- Кстати этот список можно сделать элементами dl, dt, dd https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element ну или обычным списком ul-->
+					<p class="intro__text-info-paragraph">Часовых поясов <span class="number">11</span></p>
+					<p class="intro__text-info-paragraph">Объектов природного наследия ЮНЕСКО <span class="number">12</span></p>
+					<p class="intro__text-info-paragraph">Объектов культурного наследия ЮНЕСКО <span class="number">16</span></p>
+					<p class="intro__text-info-paragraph">Природных заповедников <span class="number">105</span></p>
+					<p class="intro__text-info-paragraph">Аэропортов <span class="number">241</span></p>
+				</div>
+			
+		</section>
+		<section class="photo-grid">
+			<img class="photo" src="images/train.jpg" alt="Изображение: окно поезда">
+			<img class="photo" src="images/atharva-tulsi.jpg" alt="Изображение:atharva-tulsi">
+			<img class="photo" src="images/tuman.jpg" alt="Изображение:Туман">
+			<img class="photo" src="images/sochi.jpg" alt="Изображение:Сочи горы">
+			<img class="photo" src="images/arisa.jpg" alt="Изображение:Ариса">
+			<img class="photo" src="images/baikal.jpg" alt="Изображение:Байкал">
+			<img class="photo" src="images/elbrus.jpg" alt="Изображение:Эльбрус">
+			<img class="photo" src="images/kondratiev.jpg" alt="Изображение:Станислав Кондратьев">
+			<img class="photo" src="images/kamchatka-1.jpg" alt="Изображение:Камчатка-1">
+			<img class="photo" src="images/kamchatka-2.jpg" alt="Изображение:Камчатка-2">
+			<img class="photo" src="images/baikal-2.jpg" alt="Изображение:Байкал-2">
+			<img class="photo" src="images/ergaki.jpg" alt="Изображение:ergaki">
+		</section>
+		<section class="places">
+			<div class="place">
+				<!-- Лучше называть эти части не по расположению (top и bottom), а по смыслу (например, header и content). -->
+				<div class="place__header">
+					<!-- Нужно исправить: содержимое top выходит за пределы вьюпорта на ширине меньше 1060 -->
+					<h2 class="place__title">Куршская коса</h2>
+					<div class="place__website">
+						<p class="url">URL</p>
+						<p class="place__url-heading"><a class="link" href="http://park-kosa.ru/">park-kosa.ru</a></p>
+					</div>
+				</div>
+				<div class="place__content">
+					
+						<img class="place__image" src="images/kosa.jpg" alt="Изображение: Куршская коса">
+						<!-- Тут надо разобраться с БЭМом. Здесь используется модификатор, но кажется разница между place и place_paragraph не стилистическая. Может быть это разные сущности и place_paragraph это элемент? -->
+						<!-- Теперь paragraph это отдельный блок. Что конечно может быть. Вообще тут нет какого-то одного правильного решения, все зависит от задачи. А именно, что нужно будет переиспользовать, а что нет. Но главное, чтобы вы поняли, когда стоит делать блоки, когда элементы. Сейчас place__paragraph это по сути много параграфов. Можно назвать его place__text, а параграфы place__paragraph. Или сделать новый блок для всего текста. Вот тут в комментах можно почитать на тему: https://ru.bem.info/forum/158/ -->
+						<div class="place__text">
+						<p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона на краю российского анклава.</p>
+						<p class="place__paragraph">На этом Калининградская область не заканчивается. Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
+					    </div>
+				</div>
+			</div>
+
+			<div class="place">
+				<div class="place__header">
+					<h2 class="place__title">Кольский</h2>
+					<div class="place__website">
+						<p class="url">URL</p>
+						<p class="place__url-heading"><a class="link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy">National Geographic</a></p>
+					</div>
+				</div>
+				<div class="place__content">
+					
+						<img class="place__image" src="images/kolsky.jpg" alt="Изображение: Кольский">
+						<div class="place__paragraph">
+						<p class="paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
+						<p class="paragraph">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
+					    </div>
+				</div>
+			</div>
+
+			<div class="place">
+				<div class="place__header">
+					<h2 class="place__title">Алтай</h2>
+					<div class="place__website">
+						<p class="url">URL</p>
+						<p class="place__url-heading"><a class="link" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822">Facebook</a></p>
+					</div>
+				</div>
+				<div class="place__content">
+					
+						<img class="place__image" src="images/altai.jpg" alt="Изображение: Алтай">
+						<div class="place__paragraph">
+						<p class="paragraph">Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
+						<p class="paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
+					    </div>
+				</div>
+			</div>
+			
+			<div class="place">
+				<div class="place__header">
+					<h2 class="place__title">Зимний Байкал</h2>
+					<div class="place__website">
+						<p class="url">URL</p>
+						<p class="place__url-heading"><a class="link" href="https://vk.com/baikalmile">https://vk.com/baikalmile</a></p>
+					</div>
+				</div>
+				<div class="place__content">
+					
+						<img class="place__image" src="images/winter-baikal.jpg" alt="Изображение: Алтай">
+						<div class="place__paragraph">
+						<p class="paragraph">Всем известен Байкал как крупнейшее озеро в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
+						<p class="paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
+					    </div>
+				</div>
+			</div>
+
+			<div class="place">
+				<div class="place__header">
+					<h2 class="place__title">Карелия</h2>
+					<div class="place__website">
+						<p class="url">URL</p>
+						<p class="place__url-heading"><a class="link" href="http://vodlozero.ru/">http://vodlozero.ru/</a></p>
+					</div>
+				</div>
+				<div class="place__content">
+					
+						<img class="place__image" src="images/karelia.jpg" alt="Изображение: Алтай">
+						<div class="place__paragraph">
+						<p class="paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>	
+					    </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="video">
+			<h2 class="video__title">В глубины Земли и в дальний космос</h2>
+			<h3 class="video__subtitle">Видео от студии Stereotactic о местах в России, где ведутся фундаментальные исследования</h3>
+			<div class="video__containers">
+				<!-- Нужно исправить: когда вы затемняете картинки, текст не должен становится темнее (то есть прозрачным) -->
+				<div class="video__container-first">
+					<img class="video__image" src="images/kamchatka.jpg" alt="стоп кадр видео про камчатку"> 
+					<a class="link" href="https://vimeo.com/81106671"><img class="icon-play" src="images/icon_play.svg" alt="Значок воспроизведения"></a>
+					<span class="video__duration">6:30</span>
+					<h3 class="video__container-title">Colors of Kamchatka</h3>
+					<h4 class="video__container-subtitle">Director: Pavel Karykhalin</h4>
+				</div>
+				<div class="video__container-second">
+					<img class="video__image" src="images/observatory.jpg" alt="стоп кадр видео про обсерваторию">
+					<a class="link" href="https://vimeo.com/290675450"><img class="icon-play" src="images/icon_play.svg" alt="Значок воспроизведения"></a>
+					<span class="video__duration">24:45</span>
+					<h3 class="video__container-title">Обсерватория | Observatory</h3>
+					<h4 class="video__container-subtitle">Director: Alexander Khudokon</h4>
+				</div>				
+			</div>
+		</section>
+
+		<section class="comments">
+			<h2 class="comments__title">Фотографы, снимающие Россию</h2>
+			<h3 class="comments__subtitle">Природа и люди вдохновили их работы, удостоенные наград на международных конкурсах</h3>
+			<div class="comments__container">
+				<!-- Нужно исправить: содержимое выходит за пределы вьюпорта на ширине меньше 1270 -->
+				<div class="comments__container-comment">
+					<img class="comments__container-image" src="images/lyagushkin.jpg" alt="Изображение: Виктор Лягушкин">
+					<div class="transmition">
+					<p class="comments__container-paragraph">«Если вам кажется, что в России ничего не происходит, то просто выгляньте “наружу”…»</p>
+					<h3 class="comments__container-subtitle">Виктор Лягушкин</h3>
+					</div>
+				</div>
+				
+				<div class="comments__container-comment">
+					<img class="comments__container-image" src="images/hafizov.jpg" alt="Изображение: Иван Хафизов">
+					<div class="transmition">
+					<p class="comments__container-paragraph">«Если в город едут туристы — неважно за чем они туда едут: за шамбалой или фрески Рублева искать, или на родину Тарковского — туристы обеспечивают любой город молодёжью, рабочими местами и в конечном счёте наполняют его жизнью.»</p>
+					<h3 class="comments__container-subtitle">Иван Хафизов</h3>
+					</div>
+				</div>
+
+				<div class="comments__container-comment">
+					<img class="comments__container-image" src="images/maksimshin.jpg" alt="Изображение: Сергей Максимишин">
+					<div class="transmition">
+					<p class="comments__container-paragraph">«Ты приезжаешь, и люди рассказывают тебе, как им плохо. А когда ты покажешь, как им плохо, то ты сволочь и всё очернил.»</p>
+					<h3 class="comments__container-subtitle">Сергей Максимишин</h3>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="cover">
+			<!-- Нужно исправить: как и в блоке video затемнение не должно влиять на текст. В том числе и по наведению указателя мыши. -->
+			<a href="https://stampsy.com/na-elektrichkakh-do-baikala"><img class="cover__image" src="images/cover.jpg" alt="Изображение: Поезда"></a>
+			<!-- Нужно исправить: на максимальной ширине заголовок уходит за пределы картинки из-за своей ширины. -->
+			<!-- Нужно исправить: лишний закрывающий тег a -->
+			<h2 class="cover__title">До Байкала «на собаках»</h2>
+			<h3 class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до Байкала на электричках.</h3>
+			<!-- Нужно исправить: тут весь текст сжимается. Не увлекайтесь vw единицами. Они могут быть очень полезны, но в высоте строки и ширине текстовых элементов могут приводить к таким проблемам. Высоту строки можно делать относительной от размера шрифта (em, rem), а ширину в процентах от родителя. -->
+		</section>
+
+		
+	</main>
+	<footer class="footer">
+		<a class="link footer__link" href="https://yandex.ru/maps/">Карты</a>
+		<a class="link footer__link" href="https://yandex.ru/pogoda/">Погода</a>
+		<a class="link footer__link" href="https://rasp.yandex.ru/">Расписание</a>
+		<a class="link footer__link" href="https://calendar.yandex.ru/">Календарь</a>
+		<a class="link footer__link" href="https://travel.yandex.ru">Путешествия</a>
+		<div class="footer__copyright-box">
+		<p class="footer__copyright">© 2019. Грушай Николай</p>
+		</div>
+	</footer>
+ </div>	
+</body>
+</html>
+<!-- Прежде всего нужно разобраться с адаптивом. Я выловил часть содержимого, которые выходит за пределы вьюпорта, но вам нужно найти самому оставшееся. Сделать это можно выбрав указатель в девтулзах и водя им за пределами вьюпорта и задавая блокам и элементам overflow: hidden. Цель: не должно быть горизонтальной прокрутки (скролла). Помимо изменения ширины для адаптива нужно в нужный момент изменять размер шрифтов и переносить элементы на другую строку (flex-wrap для флексбокса). Это самое главное.
+Когда разберетесь с этим обратите внимание, как ведет себя содержимое между брейкпоинтами. В блоке photo-grid между картинками появляются непропорциональные отступы. Это происходит из-за значения space-between. Чтобы галерея масштабировалась пропорционально как на макете можно использовать функцию calc() вида calc(100% / количество колонок - ширина отступа/отступов) для ширины, авто высоту, чтобы не деформировались картинки и относительные единицы для отступов. -->
+<!-- Отлично, что догадались про один отступ в calc. Я исправил коммент на всякий случай. -->
+<!-- Принял работу. Можно еще улучшить соответствие с макетом: шапка и футер в какой-то момент прилипают к краям. В макете только несколько блоков и только на узких экранах прилипают. У остальных есть небольшие отступы. 
+Обратите внимание на выравнивание текста цитаты в comments__container-paragraph. Оно идет от края до края. При этом имя выровнено по левому. 
+В футере ссылки и копирайт на разной высоте.  
+Текст в place стоит переносить под картинки раньше, чтобы он не сжимался до одного слова в строчку. Так читать неудобно. -->
