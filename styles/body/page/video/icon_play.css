@@ -1,0 +1,20 @@
+.icon-play{
+	height: 41px;
+	z-index: 2;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+@media screen and (max-width: 769px) {
+	.icon-play{
+		margin-top: 24px;
+		margin-left: 24px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.icon-play{
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+}

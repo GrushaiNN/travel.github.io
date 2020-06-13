@@ -1,0 +1,24 @@
+@import url('__link.css');
+@import url('__copyright.css');
+@import url('__copyright-box.css');
+.footer{
+	position: relative;
+	max-width: 1184px;
+	margin: auto;
+	padding-top: 160px;
+	padding-bottom: 48px;
+	display: flex;
+}
+
+@media screen and (max-width: 1025px){
+	.footer{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 585px){
+	.footer{
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,11 @@
+.footer__copyright-box{
+	width: 50%;
+}
+
+@media screen and (max-width: 376px){
+	.footer__copyright-box{
+		width: 70%;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+}

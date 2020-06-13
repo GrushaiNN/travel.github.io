@@ -1,0 +1,13 @@
+.place__url-heading{
+	font-size: 18px;
+	line-height: 30px;
+	color: #FFFFFF;
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 376px) {
+	.place__website{
+		visibility: hidden;
+	}
+}

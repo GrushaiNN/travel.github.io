@@ -1,0 +1,16 @@
+@import url('photo.css');
+
+.photo-grid{
+	margin: auto;
+	max-width: 1184px;
+	padding-top: 82px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 1025px){
+	.photo-grid{
+		width: 90%;
+	}
+} 

@@ -1,0 +1,21 @@
+@import url('__title.css');
+@import url('__subtitle.css');
+@import url('__content-row.css');
+@import url('__text-main.css');
+@import url('__text-autor.css');
+@import url('__text-info.css');
+@import url('__text-info-paragraph.css');
+@import url('number.css');
+.intro{
+	max-width: 985px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding-top: 80px;
+}
+
+@media screen and (max-width: 1025px) {
+	.intro{
+		width: 90%;
+	}
+}

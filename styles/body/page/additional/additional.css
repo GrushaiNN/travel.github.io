@@ -1,0 +1,15 @@
+@import url('__title.css');
+@import url('__subtitle.css');
+@import url('__container.css');
+@import url('__image.css');
+@import url('__container-item.css');
+@import url('__container-title.css');
+@import url('__container-subtitle.css');
+.additional{
+	width: 1184px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 102px;
+}

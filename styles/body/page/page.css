@@ -1,0 +1,28 @@
+@import url('header/header.css');
+@import url('link.css');
+@import url('lead/lead.css');
+@import	url('Intro/intro.css');
+@import	url('photo-grid/photo-grid.css');
+@import url('places/places.css');
+@import url('video/video.css');
+@import url('additional/additional.css');
+@import url('comments/comments.css');
+@import url('cover/cover.css');
+@import url('emblem/emblem.css');
+@import url('barentsburg/barentsburg.css');
+@import url('footer/footer.css');
+.page{
+	background-color: #2A2C2F;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 1.8rem;
+	font-family: Inter;
+	color: #FFFFFF;
+	font-weight: normal;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}

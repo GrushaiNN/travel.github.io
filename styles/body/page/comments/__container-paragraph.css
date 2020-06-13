@@ -1,0 +1,22 @@
+.comments__container-paragraph{
+	width: 100%;
+	font-size: 14px;
+	line-height: 23px;
+	margin-top: 42px;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+@media screen and (max-width: 1025px){
+	.comments__container-paragraph{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 769px){
+	.comments__container-paragraph{
+		width: 90%;
+		margin: auto;
+	}
+}

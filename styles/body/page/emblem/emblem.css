@@ -1,0 +1,10 @@
+@import url('__title.css');
+@import url('__cotainer.css');
+@import url('__image.css');
+@import url('__city.css');
+@import url('__item.css');
+.emblem{
+	padding-top: 82px;
+	width: 1184px;
+	margin: auto;
+}

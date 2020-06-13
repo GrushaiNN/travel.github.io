@@ -1,0 +1,11 @@
+.additional__container-subtitle{
+	position: absolute;
+	top: 246px;
+	left: 18px;
+	font-size: 14px;
+	line-height: 20px;
+	width: 248px;
+	z-index: 2;
+	margin: 0;
+	font-weight: normal;
+}

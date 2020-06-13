@@ -1,0 +1,19 @@
+.video__container-first{
+	/*background: url("kamchatka.jpg");*/
+	background-size: cover;
+	width: calc(100%/2 - 18px);
+	border-radius: 5px;
+	margin-right: 18px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+@media screen and (max-width: 640px){
+	.video__container-first{
+		width: 100%;
+		margin: auto;
+		margin-bottom: 8px;
+	}
+}

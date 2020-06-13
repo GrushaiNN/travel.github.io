@@ -1,0 +1,19 @@
+@import url('__link.css');
+@import url('__lang.css');
+@import url('__logo.css');
+@import url('__link_selected.css');
+.header{
+	max-width: 1184px;
+	height: 52px;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	margin: auto;
+	padding-top: 17px;
+}
+
+@media screen and (max-width: 1025px){
+	.header{
+		width: 90%;
+	}
+}

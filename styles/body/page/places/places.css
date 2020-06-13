@@ -1,0 +1,23 @@
+@import url(place.css);
+@import url(__title.css);
+@import url(__image.css);
+@import url(website.css);
+@import url(url.css);
+@import url(__url-heading.css);
+@import url(__paragraph.css);
+@import url(__header.css);
+@import url(__content.css);
+@import url(place__text.css);
+.places{
+	max-width: 984px;
+	padding-top: 92px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 1025px){
+	.places{
+		width: 90%;
+	}
+}

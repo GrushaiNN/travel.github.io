@@ -1,0 +1,15 @@
+.video__container-second{
+	/*background: url('observatory.jpg');*/
+	background-size: cover;
+	width: calc(100%/2 - 18px);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+@media screen and (max-width: 640px){
+	.video__container-second{
+		width: 100%;
+	}
+}
